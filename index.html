@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De-Icing Metering</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>De-icing Metering</h1>
+    <h3>Maximum on Pad</h3>
+<p>When a user clicks on one of the buttons it remains in a clicked on status</p>
+<hr>
+<p>Flight #3922 MCI
+<input type="button" id="button" value="Ops Agent Notified" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+<input type="button" id="button" value="Holding at the Gate" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+<input type="button" id="button" value="Clear To Push" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+<input type="button" id="button" value="Waiting for De-Ice Pad" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+<input type="button" id="button" value="Taxiing" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+<input type="button" id="button" value="Leaving De-Ice Pad" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Continue to Hold At Gate" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+</p>
+<hr>
+<p>Flight #2673 PHX
+    <input type="button" id="button" value="Ops Agent Notified" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Holding at the Gate" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Clear To Push" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Waiting for De-Ice Pad" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Taxiing" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Leaving De-Ice Pad" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+        <input type="button" id="button" value="Continue to Hold At Gate" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    </p>
+    <hr>
+<p>Flight #1171 DAL
+    <input type="button" id="button" value="Ops Agent Notified" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Holding at the Gate" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Clear To Push" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Waiting for De-Ice Pad" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Taxiing" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Leaving De-Ice Pad" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+        <input type="button" id="button" value="Continue to Hold At Gate" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+    <input type="button" id="button" value="Taken off" style="color:black" onclick="setColor(event, 'button', '#FF0000')"; data-count="1"/>
+
+</p>
+    <hr>
+<script>
+    function setColor(e, btn, color) {
+        let target = e.target,
+        count = +target.dataset.count;
+    target.style.backgroundColor = count === 1 ? "#FF0000" : '#FFFFFF';
+    target.dataset.count = count === 1 ? 0 : 1;
+    }
+</script>
+<p>TO DO LIST</p>
+<ul>
+    <li>Connect Database</li>
+    <li>Save button state IN database</li>
+    <li>Update State Across all Sessions</li>
+    <li>Convert Vanilla JS to React</li>
+</ul>
+</body>
+</html>
