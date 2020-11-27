@@ -1,19 +1,16 @@
 {
   "name": "deicing-metering",
-  "version": "1.0.0",
-  "description": "Decicing Metering App",
-  "main": "index.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/leodotng/decicing-metering.git"
-  },
-  "author": "Josh Leong",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/leodotng/decicing-metering/issues"
-  },
-  "homepage": "https://github.com/leodotng/decicing-metering#readme"
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  }
 }
